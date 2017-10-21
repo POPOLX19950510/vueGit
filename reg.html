@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册-简书</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="//cdn2.jianshu.io/assets/favicons/favicon-03411b154a430b85d807b4366489c21122fb983a38f3d7ca926f882e6367b13e.ico" rel="icon">
+
+</head>
+<body>
+    <img class='logo'src="img/download.png" alt="">
+    <div id="wrap">
+        <ul id="reg">
+            <li>
+                <span v-on:click='login()' >登录</span>
+                <span>.</span>
+                <span class="clicked">注册</span>
+            </li>
+            <li><div class="li2"></div></li>
+            <li class="user"><img src="img/用户.png" alt="">
+                <input type="text"placeholder="你的昵称"></li>
+            <li class="user"><img src="img/手机.png" alt="">
+                <input type="text" placeholder="手机号"></li>
+            <li class="user"><img src="img/password.png" alt="">
+                <input type="password" placeholder="设置密码"></li>
+            <li> <div class="li3"></div></li>
+            <li><input type="submit" value="注册"></li>
+            <li>
+                <p><span>{{agreeReg}}</span></p>
+                <p><a href="http://www.jianshu.com/p/c44d171298ce">用户协议</a>
+                    <span>和</span>
+                    <a href="http://www.jianshu.com/p/2ov8x3">隐私注册</a></p>
+            </li>
+            <li></li>
+            <li><div class="li9"><span></span><span></span>{{sj2}}<span></span></div></li>
+            <li class="other">
+                <a href=""><img src="img/weibo.png" alt=""></a>
+                <a href=""><img src="img/weixin.png" alt=""></a>
+                <a href=""><img src="img/QQ.png" alt=""></a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        var url='login.html';
+        var reg=new Vue({
+            el:'#reg',
+            data:{
+                agreeReg:'点击 “注册” 即表示您同意并愿意遵守简书',
+                sj2:'社交账号直接注册',
+                url:url
+            },
+            methods:{
+                login:function () {
+                    window.location.href=url;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

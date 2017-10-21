@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用手机号重置密码 - 简书</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/forget.css">
+    <link href="//cdn2.jianshu.io/assets/favicons/favicon-03411b154a430b85d807b4366489c21122fb983a38f3d7ca926f882e6367b13e.ico" rel="icon">
+</head>
+<body>
+<div id="wrap">
+    <ul id="forget">
+        <li>{{f_title}}</li>
+        <li>
+            <img src="img/phone.png" alt="">
+            <select name="" id="">
+                <option value="">
+                    <p class="cNum" v-for="list1 in lists1">{{list1}}</p>
+                    <p class="cName" v-for="list2  in lists2">{{list2}}</p></option>
+            </select>
+            <input type="text" placeholder="手机号">
+        </li>
+        <li><img src="img/安全.png" alt=""><input type="text" placeholder="短信验证码">
+        <p>{{msg}}</p></li>
+        <li><img src="img/password.png" alt=""><input type="password" placeholder="请输入新密码"></li>
+        <li><img src="img/password.png" alt=""><input type="password" placeholder="请再输入一遍新密码"></li>
+        <li><input type="submit" value="重置密码"></li>
+        <li><p v-on:click="change()"><img src="img/icon-return.png" alt="">返回登录注册</p></li>
+        <li></li>
+    </ul>
+</div>
+<script>
+    var vm=new Vue({
+        el:'#wrap',
+        data:{
+            f_title:'用手机号重置密码',
+            msg:'发送验证码',
+            lists1:["+86","+61","+33"],
+            lists2:["中国","澳大利亚","法国"]
+        },
+        methods:{
+            change:function () {
+                window.location.href="login.html";
+            }
+        }
+    })
+</script>
+</body>
+</html>

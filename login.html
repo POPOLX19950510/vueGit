@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录-简书</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="//cdn2.jianshu.io/assets/favicons/favicon-03411b154a430b85d807b4366489c21122fb983a38f3d7ca926f882e6367b13e.ico" rel="icon">
+</head>
+<body>
+<img class="logo" src="img/download.png" alt="">
+<div id="wrap">
+
+    <ul id="list">
+        <li>
+            <span class="clicked">登录</span>
+            <span>.</span>
+            <span v-on:click='reg()' >注册</span>
+        </li>
+        <li><div class="li2"></div></li>
+        <li class="user"><img src="img/用户.png" >
+            <input type="text" placeholder="手机号或邮箱"></li>
+        <li class="user"><img src="img/password.png" alt="">
+            <input type="password" placeholder="密码"></li>
+        <li><div class="li3"></div></li>
+        <li><button>{{yz}}</button></li>
+        <!--<li><input type="button"value="点击按钮进行验证" ></li>-->
+        <li>
+            <div class="li9">
+            <label for="remme" >
+                <input id="remme" type="checkbox" >记住我</label>
+            <a  v-on:click='question()'>{{question}}</a>
+            </div>
+        </li>
+        <li><input type="submit" value="登录"></li>
+        <li><div class="li9"><span></span>
+            <span>{{sj}}</span><span></span></div></li>
+        <li class="other">
+            <a href=""><img src="img/weibo.png" alt=""></a>
+            <a href=""><img src="img/weixin.png" alt=""></a>
+            <a href=""><img src="img/QQ.png" alt=""></a>
+            <a href=""><p>其他</p></a>
+        </li>
+    </ul>
+</div>
+<script>
+    var url='reg.html';
+    var url2='forget.html';
+    var vm=new Vue({
+        el:"#wrap",
+        data:{
+            yz:'点击按钮进行验证',
+            dl:'登录',
+            question:'登录遇到问题?',
+            sj:'社交证号登录',
+            url:url,
+            url2:url2,
+            lists:['用手机号重置密码','用邮箱重置密码','无法用海外手机号登录','无法用Google账号登录']
+        },
+        methods:{
+            reg:function () {
+                window.location.href=url;
+            },
+            question:function () {
+                window.location.href="forget.html";
+            }
+
+        }
+    })
+
+</script>
+</body>
+</html>

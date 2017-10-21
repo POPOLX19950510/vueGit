@@ -1,0 +1,64 @@
+#forget li:nth-child(1){
+    padding:60px 0 ;
+    font-size: 18px;
+}
+#forget  select{
+    width: 25%;
+    height: 50px;
+    padding-left: 50px;
+    border-radius: 0;
+    border: none;
+}
+#forget li:nth-child(2) select option{
+    text-align: right;
+}
+#forget li:nth-child(2) input{
+    width: 73%;
+}
+#forget li:nth-child(2) p{
+    width: 100px;
+    display: inline-block;
+}
+#forget li {
+    position: relative;
+}
+#forget li>img{
+    position: absolute;
+    height:22px;
+    left:10px;
+    top:14px;
+}
+#forget li input{
+    border-radius: 0;
+}
+#forget li:nth-child(6) input[type='submit']{
+    height:40px;
+    width:100%;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: #4494d0;
+}
+#forget li:nth-child(3) p{
+    padding:5px 15px;
+    position:absolute;
+    right:15px;
+    top:12.5px;
+    background-color: #8dc6e4;
+    border-radius: 20px;
+    color :white;
+    font-size: 12px;
+}
+p {
+    color:grey;
+    position: relative;
+    text-align: center;
+    padding:30px 0;
+    cursor: pointer;
+}
+p img{
+    position: relative;
+    top:4px;
+    width:20px;
+
+}

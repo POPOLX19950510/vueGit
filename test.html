@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script SRC="node_modules/vue/dist/vue.js"></script>
+
+
+</head>
+<body>
+<div id="wrap" >
+    <p v-for="list in lists">{{list}}</p>
+
+</div>
+</body>
+</html>
+<script>
+    var vm=new Vue({
+        el:"#wrap",
+        data:{
+            yz:'点击按钮进行验证',
+            dl:'登录',
+            question:'登录遇到问题?',
+            sj:'社交证号登录',
+            url:'reg.html',
+            lists:['用手机号重置密码','用邮箱重置密码','无法用海外手机号登录','无法用Google账号登录']
+        },
+        methods:{
+            qc:function () {
+
+            }
+
+        }
+    })
+</script>
+</body>
+</html>
