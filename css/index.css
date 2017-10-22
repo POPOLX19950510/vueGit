@@ -159,6 +159,10 @@ input[type='image']{
         box-shadow: none;
     }
 }
+
+#reg li:nth-child(4) [type='text']{
+    border-radius: 0px;
+}
  #reg input[type='submit']{
     background-color: #49bf30;
 }
