@@ -1,0 +1,72 @@
+*{
+    padding:0;
+    margin: 0 auto;
+}
+
+#app{
+    width: 500px;
+    padding:10px;
+}
+.title{
+    background-color: #4ba7d9;
+    padding: 5px;
+    overflow: hidden;
+}
+.title div{
+    float: right;
+    width:30px;
+}
+.title img
+{
+    width:30px;
+}
+.con1{
+    padding: 10px;
+}
+
+.con_1{
+    display:inline-block;
+    /*padding: 10px;*/
+    width: 50%;
+    overflow: hidden;
+}
+
+.list1 img{
+    width:200%;
+    position: relative;
+    left:-125px;
+    /*margin-right:px;*/
+}
+.con2{
+    padding: 15px;
+    overflow: hidden;
+
+}
+.con_2{
+    padding: 5px;
+    overflow: hidden;
+    border-bottom: 1px solid gray;
+}
+.con_2 div{
+    float: left;
+}
+.con_2 div:nth-child(2){
+    display: inline-block;
+    height:100px;
+    width:70%;
+    /*padding: 5px;*/
+    overflow: hidden;
+}
+.list2{
+    overflow: hidden;
+    height:100px;
+    width: 26%;
+    margin-right: 10px;
+    box-sizing: border-box;
+
+}
+.list2 img{
+    height:100%;
+    position: relative;
+    left:-40.5px;
+}
